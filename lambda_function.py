@@ -11,7 +11,7 @@ def lambda_handler(event, context):
     r = r.data.decode('utf-8')
     aud = re.findall(r'\$[0-9,.]+', r)
     aud = ''.join(aud)
-    message = 'Hello Edu, Right now 1000 Rands is', aud
+    message = 'Hello Edu, Right now 2000 Rands is', aud
 
     topicArn = 'arn:aws:sns:eu-west-1:123456789:EXCHANGE'
 
