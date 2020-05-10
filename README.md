@@ -15,10 +15,10 @@ Outside of 're' and 'boto3' had to use 2 additional modules:
 urllib3 
 certifi
 
-boto3 is the aws sdk for python, used to create the sns client that pushes the notifications to email subscribers
-urllib3 is a python http client that i used to generate the http GET made against the exchange site to get the html output
-re is a regex module that i used to parse the html output to find the string match for the conversion output (in numbers)
-certifi contains a collection of popular root CAs that my https connection uses in valildating the certificate response 
+- boto3 is the aws sdk for python, used to create the sns client that pushes the notifications to email subscribers
+- urllib3 is a python http client that i used to generate the http GET made against the exchange site to get the html output
+- re is a regex module that i used to parse the html output to find the string match for the conversion output (in numbers)
+- certifi contains a collection of popular root CAs that my https connection uses in valildating the certificate response 
 from the exchange site 
 
 All in all a very simple tool built, not very complex 
