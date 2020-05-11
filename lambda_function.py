@@ -5,7 +5,7 @@ import re
 
 def lambda_handler(event, context):
     sns = boto3.client('sns')
-    url = 'https://zar.currencyrate.today/aud/1000'
+    url = 'https://zar.currencyrate.today/aud/2000'
     http = urllib3.PoolManager(ca_certs=certifi.where())
     r =  http.request('GET', url)
     r = r.data.decode('utf-8')
